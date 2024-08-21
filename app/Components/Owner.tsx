@@ -52,56 +52,52 @@ function Owner() {
 
     
   return (
-    <div className='  bg-[#efd9d1] relative -z-2 '>
-        <div className='md:flex sm: block md:h-[500px] sm: h-full'>
+    <div className='relative -z-2 '>
+        <div className='md:flex sm: block w-full md:h-[400px] sm: h-[700px]'>
 
-            <div className='md:w-1/2 sm: w-full m-auto relative flex  ' >
+            <div className='flex md:w-1/2 sm: w-full md:h-full sm: h-[400px] ' >
+                {data.map((item,index)=>(
+                    <motion.div
+                    
+                    key={index} style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }} 
+                    className={`transition-transform duration-500 transformn text-sm w-[65%] py-10 m-auto   ${index === currentIndex? 'block translate-x-0' : 'hidden translate-x-full'} `}
+                    >
+                        <p className=' z-50 '>
+                            {item.about}
+                        </p>
+
+                         <ImQuotesLeft className='text-[#e6b2a2] text-6xl absolute md:bottom-[82%] sm: bottom-[85%] -left-12 -z-50 ' />
 
 
-            {data.map((item,index)=>(
-                <motion.div
-                
-                key={index} style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }} 
-                className={`transition-transform duration-500 transformn   ${index === currentIndex? 'block translate-x-0' : 'hidden translate-x-full'} `}
-                >
-                     <p className='md:text-lg sm: text-sm w-[70%] m-auto relative z-10 '>{item.about}
-                    </p>
+                        <div className='flex items-center gap-6 mt-4'>
+                            <Image alt='' height={200} width={200} src="/RentalImages/Ellipse.png" style={{ width: 'auto', height: 'auto' }}></Image>
 
-                <ImQuotesLeft className='text-[#e6b2a2] text-6xl absolute bottom-[89%] left-[9%] -z-1 ' />
+                                <div className='flex flex-col '>
+                                    <h2 className='text-[#F4511E] font-bold'>{item.name}</h2>
+                                    <h4 className=''>{item.title}</h4>
+                                </div>
+                        </div>
 
+                        <div className='flex mt-4  '>
+                            {indicators.map((indicator,index)=>(
+                                <div key={index} className={`  ${index === currentIndex? 'text-red-500' : 'text-white'} `}>
+                                    <p className='text-2xl'>{indicator.icon}</p>
+                                </div>
+                            ))}
+                        </div>
 
-                    <div className='flex flex-row items-center w-[70%] m-auto py-4 gap-x-4'>
-                        <Image alt='' height={50} width={50} src="/RentalImages/Ellipse.png" style={{ width: 'auto', height: 'auto' }}></Image>
+                    
+                    </motion.div>
+                ))}
 
-                             <div className='flex flex-col '>
-                                <h2 className='text-[#F4511E] font-bold'>{item.name}</h2>
-                                <h4 className=''>{item.title}</h4>
-                            </div>
-
-                     </div>
-
-                     <span className='flex w-[40%] ml-[15%] mt-6'>
-                        {indicators.map((indicator,index)=>(
-                            <div key={index} className={`  ${index === currentIndex? 'text-red-500' : 'text-white'} `}>
-                                <p className='text-2xl'>{indicator.icon}</p>
-                            </div>
-                        ))}
-                    </span>
-
-                  
-                </motion.div>
-            ))}
-
-  
-
-            <IoIosArrowBack className='absolute top-[50%] text-6xl text-[#F4511E] hover:bg-white z-50' onClick={()=>handleLeft()}/>
-            <IoIosArrowForward className='absolute top-[50%] left-[90%] text-6xl text-[#F4511E] z-50 hover:bg-white' onClick={()=>handleRight()}/>
+                <IoIosArrowBack className='absolute md:top-[50%] sm: top-[45%] text-6xl text-[#F4511E] hover:bg-white z-50' onClick={()=>handleLeft()}/>
+                <IoIosArrowForward className='absolute md:top-[50%] sm: top-[45%] md:left-[45%] sm: left-[80%] text-6xl text-[#F4511E] z-50 hover:bg-white' onClick={()=>handleRight()}/>
                
             </div>
 
 
             
-            <div className='md:w-[50%] sm: w-full sm: h-full'>
+            <div className='md:w-1/2 sm: w-full md:h-full sm: h-[300px]' >
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JzPfMbG1vrE?si=_W90oSy0vMCUezeh" title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>

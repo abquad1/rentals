@@ -4,7 +4,7 @@ import ContactInfo from '../../Components/ContactInfo'
 
 function Contact() {
   return (
-    <div id='Contact'>
+    <div id='Contact' className='w-full bg-[#efd9d1]'>
         <Owner/>
         <ContactInfo />
     </div>

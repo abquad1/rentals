@@ -8,20 +8,16 @@ import Jumbotron from '../../Components/Jumbotron'
 
 function Landing() {
   return (
-    
-        <div  id='Landing' className="h-screen bg-[url('/RentalImages/bgImg.png')] bg-no-repeat bg-cover bg-center font-sans" >
+    <div id='Landing' className="h-screen bg-[url('/RentalImages/bgImg.png')] bg-no-repeat bg-cover bg-center font-sans relative">
+       {/* <div > */}
         <Navbar />
-        
-        {/* <hr className="w-[80%] mx-36 bg-gray-100 relative top-[10%]  sm: hidden md:block"></hr> */}
-
         <Jumbotron />
-
+      {/* </div> */}
     </div>
+       
 
     
     
-    
-
 
   )
 }
