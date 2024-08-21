@@ -54,21 +54,21 @@ onSubmit={handleSubmit}
 >
 {/* for the whole inputBox apart from textbox */}
         <div className='sm:block md:grid grid-cols-3 m-auto w-[82%] gap-5 mt-4'>
-            <div className='flex flex-col md:mt-0 sm: mt-4  md:mt-0 sm: mt-4'>
+            <div className='flex flex-col md:mt-0 sm: mt-4  '>
                 <label className='text-lg font-semibold'>Name<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                  <input onChange={handleChange} name='name' value={formData.name} required
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] pl-4 h-[40px] '
                   type='text' placeholder='Enter Name'/>
             </div>
 
-            <div className="flex flex-col md:mt-0 sm: mt-4  md:mt-0 sm: mt-4 ">
+            <div className="flex flex-col md:mt-0 sm: mt-4   ">
                 <label className='text-lg font-semibold'>Address<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                  <input onChange={handleChange} name='address' value={formData.address} required
                   className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] pl-4 h-[40px]' 
                  type='text' placeholder='Enter Address'/>
             </div>
 
-            <div className="flex flex-col md:mt-0 sm: mt-4  md:mt-0 sm: mt-4 ">
+            <div className="flex flex-col  sm: mt-4  md:mt-0  ">
                 <label className='text-lg font-semibold'>Unit Number<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                  <input onChange={handleChange} name='unit' value={formData.unit} required
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] pl-4 h-[40px]'
