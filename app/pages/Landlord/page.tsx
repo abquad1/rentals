@@ -15,7 +15,7 @@ function Landlord() {
         <div className='sm: block md:flex md:items-center md:justify-between mt-10'>
 
             <div className='sm: ml-0 md:-ml-10 sm: w-[300px] md:w-auto'>
-                <Image height={400} width={400} alt='' src="/RentalImages/unsplash_oGmf8o53LeE.png"/>
+                <Image height={400} width={400} alt='' src="/RentalImages/unsplash_oGmf8o53LeE.png" style={{ width: 'auto', height: 'auto' }}/>
             </div>
 
             <div className='sm: block md:grid md:grid-cols-3 sm:gap-0 md:gap-10 md:w-[70%] sm: w-[90%] sm: m-auto'>

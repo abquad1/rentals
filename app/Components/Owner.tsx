@@ -71,7 +71,7 @@ function Owner() {
 
 
                     <div className='flex flex-row items-center w-[70%] m-auto py-4 gap-x-4'>
-                        <Image alt='' height={50} width={50} src="/RentalImages/Ellipse.png"></Image>
+                        <Image alt='' height={50} width={50} src="/RentalImages/Ellipse.png" style={{ width: 'auto', height: 'auto' }}></Image>
 
                              <div className='flex flex-col '>
                                 <h2 className='text-[#F4511E] font-bold'>{item.name}</h2>

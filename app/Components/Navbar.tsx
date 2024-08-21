@@ -19,7 +19,7 @@ function Navbar() {
     <div className='  md:w-[80%] md:mx-auto   transition-all flex sm: justify-between md:justify-between h-[10%] pt-6 sm: px-4 md:px-0  ' >
         <div className='xs: h-5'>
             <Link href="#Landing">
-                <Image width={100} height={10} alt='' src="/RentalImages/logo.png"></Image>
+                <Image width={100} height={10} alt='' src="/RentalImages/logo.png" style={{ width: 'auto', height: 'auto' }}></Image>
             </Link>
         </div>
 
