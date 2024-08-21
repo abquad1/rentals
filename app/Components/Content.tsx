@@ -1,8 +1,6 @@
 import React from 'react'
 import { content} from './Data'
-import Image from 'next/image'
-import autoprefixer from 'autoprefixer'
-import { relative } from 'path'
+import Image from 'next/image';
 
 function Content() {
 
@@ -27,7 +25,7 @@ function Content() {
               ))}
           </div>
 
-          <div className='md: w-[50%] sm: w-full'>
+          <div className='md: w-[50%] sm:w-full'>
           ` <div className=''>
               <h1 className='font-bold text-[52px] '>Flexibility and options to suit your lifestyle.</h1>
               <p className=' text-2xl'>You need it? We got it. We make finding your next home easy, comfortable, and simple. From our happiness guarantee to our selective roommate
