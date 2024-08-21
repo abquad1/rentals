@@ -115,42 +115,42 @@ export const content = [
         src: "/RentalImages/unsplash_nEtpvJjnPVo.png",
         caption: "Flexible Leases",
         margin_top: 0,
-        height: 250,
-        width: 250,
+        height: 230,
+        width: 240,
         margin_left: 0,
-        bottom: "80%"
+        bottom: "15%"
     },
 
     {
         id: 2,
         src: "/RentalImages/Image2.png",
         caption: "7-day Happiness guaranteed",
-        margin_top: 45,
-        height: 200,
-        width: 250,
-        margin_left: 30,
-        bottom: "62%"
+        margin_top: 28,
+        height: 200, smHeight: 50,
+        width: 230, smWidth: 50,
+        margin_left: "-10%",
+        bottom: "30%"
     },
     {
         id: 3,
         src: "/RentalImages/unsplash_uooMllXe6gE.png",
         caption: "Monthly House Cleaning",
-        margin_top: 0,
-        height: 200,
+        margin_top: -30,
+        height: 180,
         width: 200,
         margin_left: 0,
-        bottom: "62%"
+        bottom: "25%"
 
     },
     {
         id: 4,
         src: "/RentalImages/unsplash_XdWkFaHI97c.png",
         caption: "Choose Your Own Roommate",
-        margin_top: 0,
-        height: 250,
-        width: 850,
-        margin_left: -5,
-        bottom: "80%"
+        margin_top: -30,
+        height: 230,
+        width: 290,
+        margin_left: "-20%",
+        bottom: "25%"
 
     }
 ]

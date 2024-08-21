@@ -52,20 +52,19 @@ function Owner() {
 
     
   return (
-    <div className='  bg-[#efd9d1] relative -z-2'>
-        <div className='flex h-[500px]'>
+    <div className='  bg-[#efd9d1] relative -z-2 '>
+        <div className='md:flex sm: block md:h-[500px] sm: h-full'>
 
-            <div
-            className='w-1/2 m-auto relative flex ' >
+            <div className='md:w-1/2 sm: w-full m-auto relative flex  ' >
 
 
             {data.map((item,index)=>(
                 <motion.div
                 
                 key={item.id} style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }} 
-                className={`transition-transform duration-500 transformn  ${index === currentIndex? 'block translate-x-0' : 'hidden translate-x-full'} `}
+                className={`transition-transform duration-500 transformn   ${index === currentIndex? 'block translate-x-0' : 'hidden translate-x-full'} `}
                 >
-                     <p className='text-lg w-[70%] m-auto relative z-10 '>{item.about}
+                     <p className='md:text-lg sm: text-sm w-[70%] m-auto relative z-10 '>{item.about}
                     </p>
 
                 <ImQuotesLeft className='text-[#e6b2a2] text-6xl absolute bottom-[89%] left-[9%] -z-1 ' />
@@ -102,7 +101,7 @@ function Owner() {
 
 
             
-            <div className='w-[50%]'>
+            <div className='md:w-[50%] sm: w-full sm: h-full'>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JzPfMbG1vrE?si=_W90oSy0vMCUezeh" title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>

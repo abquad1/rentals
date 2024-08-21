@@ -16,22 +16,22 @@ import Link from 'next/link';
 
 function ContactInfo() {
   return (
-    <div className='w-full h-full] text-white bg-black'>
-        <div className='h-[400px] w-[80%] m-auto flex items-center '>
-            <div className='w-[50%]'>
+    <div className='w-full h-full text-white bg-black pt-8'>
+        <div className='h-[400px] md:w-[80%] sm: w-full m-auto md:flex sm: block items-center '>
+            <div className='w-[50%] sm: m-auto md:m-0 '>
                 <Image src='/RentalImages/logo.png' alt='' height={200} width={200}></Image>
 
                 {/* <h1 className='text-6xl font-bold ml-12'>Logo</h1> */}
             </div>
 
-            <div className='block w-[50%]  text-lg '>
-                <div className='flex gap-4 mb-12'>
+            <div className='block md:w-[50%] sm: w-[95%] m-auto  text-lg '>
+                <div className='flex gap-4 mb-12 sm: mt-8 md:mt-0'>
                     <FaLocationDot className='text-[#F4511E]'/>
                     <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
 
                 </div>
 
-                <div className='flex items-center mb-12 gap-x-10'>
+                <div className='flex items-center  mb-12 gap-x-10'>
                     <div className='flex gap-4'><IoCall className='text-[#F4511E] '/> <p>(+234) 8143967609</p></div>
                     <div className='flex gap-4'><IoPrint  className='text-[#F4511E] '/> <p>(+234) 8149027201</p></div>
                 </div>
@@ -53,10 +53,10 @@ function ContactInfo() {
             </div>
         </div>
 
-        <div className='flex w-[80%] m-auto justify-between pb-12'>
+        <div className='md:flex sm: block md:w-[80%] sm: w-[95%] m-auto justify-between pb-12'>
             <div className=''>
-                <ul className='flex items-center gap-8'>
-                    <li>
+                <ul className='md:flex sm: grid grid-cols-3 items-center gap-8 '>
+                    <li className=''>
                         <Link href="/">ABOUT US</Link>
                     </li>
 
@@ -78,7 +78,7 @@ function ContactInfo() {
                 </ul>
             </div>
 
-            <div className='text-gray-400'>
+            <div className='text-gray-400 md:mt-0 sm: mt-4'>
                 <p>Copyright @{new Date().getFullYear()} Minimumlivingcost. All rights reserved</p>
             </div>
         </div>

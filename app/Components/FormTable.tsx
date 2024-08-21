@@ -53,29 +53,29 @@ const handleSubmit = async(e) =>{
 onSubmit={handleSubmit}
 >
 {/* for the whole inputBox apart from textbox */}
-        <div className='grid grid-cols-3 m-auto w-[82%] gap-5 mt-4'>
-            <div className='flex flex-col '>
+        <div className='sm:block md:grid grid-cols-3 m-auto w-[82%] gap-5 mt-4'>
+            <div className='flex flex-col md:mt-0 sm: mt-4  md:mt-0 sm: mt-4'>
                 <label className='text-lg font-semibold'>Name<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                  <input onChange={handleChange} name='name' value={formData.name} required
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] pl-4 h-[40px] '
                   type='text' placeholder='Enter Name'/>
             </div>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col md:mt-0 sm: mt-4  md:mt-0 sm: mt-4 ">
                 <label className='text-lg font-semibold'>Address<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                  <input onChange={handleChange} name='address' value={formData.address} required
                   className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] pl-4 h-[40px]' 
                  type='text' placeholder='Enter Address'/>
             </div>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col md:mt-0 sm: mt-4  md:mt-0 sm: mt-4 ">
                 <label className='text-lg font-semibold'>Unit Number<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                  <input onChange={handleChange} name='unit' value={formData.unit} required
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] pl-4 h-[40px]'
                   type= 'number' placeholder='Enter Unit'/>
             </div>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col md:mt-0 sm: mt-4  ">
                 <label className='text-lg font-semibold'>Cities<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                 <select name="city" onChange={handleChange} value={formData.city} required 
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] 30-4 h-[40px] pl-4 placeholder: text-gray-400'>
@@ -86,7 +86,7 @@ onSubmit={handleSubmit}
                 </select>
             </div>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col md:mt-0 sm: mt-4  ">
                 <label className='text-lg font-semibold'>State<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                 <select name='state' value={formData.state} onChange={handleChange} required 
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] 30-4 h-[40px] pl-4 placeholder: text-gray-400'>
@@ -98,7 +98,7 @@ onSubmit={handleSubmit}
                  
             </div>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col md:mt-0 sm: mt-4  ">
                 <label className='text-lg font-semibold'>Room Type<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                 <select name='room' value={formData.room} onChange={handleChange} required 
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] 30-4 h-[40px] pl-4 placeholder: text-gray-400'>
@@ -110,7 +110,7 @@ onSubmit={handleSubmit}
                  
             </div>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col md:mt-0 sm: mt-4  ">
                 <label className='text-lg font-semibold'>Price<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
                  <input onChange={handleChange} name='price' value={formData.price} required
                   className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] pl-4 h-[40px]'  type='number' placeholder='Enter Price'/>
@@ -119,7 +119,7 @@ onSubmit={handleSubmit}
 
         {/* for the text box */}
 
-        <div className="flex flex-col m-auto w-[82%] pb-8 mt-8">
+        <div className="flex flex-col  sm: mt-4  m-auto w-[82%] pb-8 md:mt-8">
             <label className='text-lg font-semibold'>Desription<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
             <input onChange={handleChange} name='description' value={formData.description} required
             className=' bg-gray-50 rounded-md border border-gray-200 w-[97%] h-[150px]  pl-4 placeholder: text-gray-400 placeholder:absolute placeholder:top-4 placeholder:left-4' placeholder='Enter decription'/>
@@ -127,8 +127,8 @@ onSubmit={handleSubmit}
 
         {/* for media upload */}
 
-        <div className='w-[45%] m-auto'>
-            <button type='submit' className='w-[500px] bg-[#F4511E] rounded-md text-white text-xl font-bold h-[50px] hover:opacity-65'>Add New property</button>
+        <div className='md:w-[45%] m-auto sm: w-[80%] '>
+            <button type='submit' className='sm: w-full sm:m-auto bg-[#F4511E] rounded-md text-white text-xl font-bold h-[50px] hover:opacity-65'>Add New property</button>
         </div>
         
 
