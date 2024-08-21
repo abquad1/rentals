@@ -53,9 +53,9 @@ function Owner() {
     
   return (
     <div className='relative -z-2 '>
-        <div className='md:flex sm: block w-full md:h-[400px] sm: h-[700px]'>
+        <div className='md:flex sm: block w-full md:h-[400px] sm: h-[750px]'>
 
-            <div className='flex md:w-1/2 sm: w-full md:h-full sm: h-[400px] ' >
+            <div className='flex md:w-1/2 sm: w-full md:h-full sm: h-[550px] ' >
                 {data.map((item,index)=>(
                     <motion.div
                     
@@ -97,7 +97,7 @@ function Owner() {
 
 
             
-            <div className='md:w-1/2 sm: w-full md:h-full sm: h-[300px]' >
+            <div className='md:w-1/2 sm: w-full md:h-full sm: h-[200px]' >
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JzPfMbG1vrE?si=_W90oSy0vMCUezeh" title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
