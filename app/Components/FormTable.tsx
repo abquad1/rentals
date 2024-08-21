@@ -19,7 +19,7 @@ const [formData, setFormData] = useState({
     description: ''
 })
 
-const handleChange =(e)=>{
+const handleChange =(e: React.ChangeEvent<HTMLInputElement>)=>{
    const {name, value} = e.target;
    setFormData({
     ...formData, [name]: value
@@ -27,7 +27,15 @@ const handleChange =(e)=>{
 
 }
 
-const handleSubmit = async(e) =>{
+const handleSelect =(e: React.ChangeEvent<HTMLSelectElement>)=>{
+    const {name, value} = e.target;
+    setFormData({
+     ...formData, [name]: value
+    })
+ 
+ }
+
+const handleSubmit = async(e:React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
     const response = await fetch('api/submit', {
         method: 'POST ',
@@ -77,7 +85,7 @@ onSubmit={handleSubmit}
 
             <div className="flex flex-col md:mt-0 sm: mt-4  ">
                 <label className='text-lg font-semibold'>Cities<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
-                <select name="city" onChange={handleChange} value={formData.city} required 
+                <select name="city" onChange={handleSelect} value={formData.city} required 
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] 30-4 h-[40px] pl-4 placeholder: text-gray-400'>
                     <option>Select City</option>
                     {cities.map((city)=>(
@@ -88,7 +96,7 @@ onSubmit={handleSubmit}
 
             <div className="flex flex-col md:mt-0 sm: mt-4  ">
                 <label className='text-lg font-semibold'>State<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
-                <select name='state' value={formData.state} onChange={handleChange} required 
+                <select name='state' value={formData.state} onChange={handleSelect} required 
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] 30-4 h-[40px] pl-4 placeholder: text-gray-400'>
                     <option>Select State</option>
                     {states.map((state)=>(
@@ -100,7 +108,7 @@ onSubmit={handleSubmit}
 
             <div className="flex flex-col md:mt-0 sm: mt-4  ">
                 <label className='text-lg font-semibold'>Room Type<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
-                <select name='room' value={formData.room} onChange={handleChange} required 
+                <select name='room' value={formData.room} onChange={handleSelect} required 
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[300px] 30-4 h-[40px] pl-4 placeholder: text-gray-400'>
                     <option>Select Room Type</option>
                     {roomTypes.map((roomType)=>(
