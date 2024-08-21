@@ -30,7 +30,7 @@ function Owner() {
         }
     ]
 
-    const indicators = [  <GoDotFill/>, <GoDotFill/>, <GoDotFill/>]
+    const indicators = [ {  id:1, icon: <GoDotFill/>}, { id:2, icon: <GoDotFill/>}, { id:3,icon: <GoDotFill/>}]
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [direction, setDirection] = useState('right')
@@ -61,7 +61,7 @@ function Owner() {
             {data.map((item,index)=>(
                 <motion.div
                 
-                key={item.id} style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }} 
+                key={index} style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }} 
                 className={`transition-transform duration-500 transformn   ${index === currentIndex? 'block translate-x-0' : 'hidden translate-x-full'} `}
                 >
                      <p className='md:text-lg sm: text-sm w-[70%] m-auto relative z-10 '>{item.about}
@@ -83,7 +83,7 @@ function Owner() {
                      <span className='flex w-[40%] ml-[15%] mt-6'>
                         {indicators.map((indicator,index)=>(
                             <div key={index} className={`  ${index === currentIndex? 'text-red-500' : 'text-white'} `}>
-                                <p className='text-2xl'>{indicator}</p>
+                                <p className='text-2xl'>{indicator.icon}</p>
                             </div>
                         ))}
                     </span>

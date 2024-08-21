@@ -19,7 +19,7 @@ function properties() {
 
       <div className='sm: block md:grid md:grid-cols-3 gap-12 mt-16 '>
         {Property.map(items=>(
-            <div className='md:w-[360px] sm: w-[80%]  sm: m-auto md:m-0  border border-gray-300 rounded-2xl sm: mb-10 md:mb-0'>
+            <div className='md:w-[360px] sm: w-[80%]  sm: m-auto md:m-0  border border-gray-300 rounded-2xl sm: mb-10 md:mb-0' key={items.id}>
               <Image height={200} width={500} alt='' src={items.src} style={{ width: 'auto', height: 'auto' }}/>
               <h3 className='font-semibold w-[250px] ml-4 mt-3 text-lg'>{items.Address}</h3>
               <h6 className='ml-4 mt-4 text-sm text-gray-500'>{items.room}</h6>
