@@ -70,7 +70,7 @@ function Owner() {
 
 
                         <div className='flex items-center gap-6 mt-4'>
-                            <Image alt='' height={200} width={200} src="/RentalImages/Ellipse.png" style={{ width: 'auto', height: 'auto' }}></Image>
+                            <Image alt='' height={100} width={100} src="/RentalImages/Ellipse4.png" style={{ width: 'auto', height: 'auto' }}></Image>
 
                                 <div className='flex flex-col '>
                                     <h2 className='text-[#F4511E] font-bold'>{item.name}</h2>
@@ -90,8 +90,8 @@ function Owner() {
                     </motion.div>
                 ))}
 
-                <IoIosArrowBack className='absolute md:top-[50%] sm: top-[45%] text-6xl text-[#F4511E] hover:bg-white z-50' onClick={()=>handleLeft()}/>
-                <IoIosArrowForward className='absolute md:top-[50%] sm: top-[45%] md:left-[45%] sm: left-[80%] text-6xl text-[#F4511E] z-50 hover:bg-white' onClick={()=>handleRight()}/>
+                <IoIosArrowBack className='absolute md:top-[50%] sm: top-[45%] text-6xl text-[#F4511E] hover:bg-white z-10' onClick={()=>handleLeft()}/>
+                <IoIosArrowForward className='absolute md:top-[50%] sm: top-[45%] md:left-[45%] sm: left-[80%] text-6xl text-[#F4511E] z-10 hover:bg-white' onClick={()=>handleRight()}/>
                
             </div>
 

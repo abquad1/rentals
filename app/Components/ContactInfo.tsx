@@ -25,7 +25,7 @@ function ContactInfo() {
             </div>
 
             <div className='block md:w-[70%] sm: w-[90%] m-auto  text-sm '>
-                <div className='flex sm: mt-6 md:mt-0'>
+                <div className='flex sm: mt-6 md:mt-0 gap-2'>
                     <FaLocationDot className='text-[#F4511E]'/>
                     <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
 
@@ -54,7 +54,7 @@ function ContactInfo() {
         </div>
 
         <div className='md:flex sm: block md:w-[80%] sm: w-[80%] m-auto justify-between pb-12'>
-            <div className='text-[12px] sm: mt-12 md:mt-0'>
+            <div className='text-[12px] sm: mt-24 md:mt-0'>
                 <ul className='md:flex sm: grid grid-cols-3 items-center gap-8'>
                     <li className=''>
                         <Link href="/" >ABOUT US</Link>

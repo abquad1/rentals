@@ -23,7 +23,7 @@ function Navbar() {
                 </Link>
             </div>
 
-            <div className={`${ open? "block bg-black absolute top-10 text-center z-10 left-0 w-screen" : "hidden"} sm: block md:block sm: mt-10 md:mt-0 w-3/5`}>
+            <div className={`${ open? "block bg-black absolute top-10 text-center left-0 w-screen z-50" : "hidden"} sm: block md:block sm: mt-10 md:mt-0 w-3/5`}>
                 <ul className='no-underline sm:block md:flex lg:flex '>
                     <li className='text-lg font-semibold text-white sm: mb-12 md:mr-10 md:mt-0'>
                         <Link href="#Landing">Home</Link>
