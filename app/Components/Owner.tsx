@@ -62,7 +62,7 @@ function Owner() {
                     key={index} style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }} 
                     className={`transition-transform duration-500 transformn text-sm w-[65%] py-10 m-auto   ${index === currentIndex? 'block translate-x-0' : 'hidden translate-x-full'} `}
                     >
-                        <p className=' z-50 '>
+                        <p className=' z-50 text-justify'>
                             {item.about}
                         </p>
 
