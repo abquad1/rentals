@@ -47,6 +47,7 @@ const handleSubmit = async(e:React.FormEvent<HTMLFormElement>) =>{
 
     const result = await response.json();
     console.log('form submitted:', result)
+
 }
 
 // console.log(formData)

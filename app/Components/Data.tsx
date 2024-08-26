@@ -49,9 +49,9 @@ export const Property =[
         iconOne: <FaCar/>,
         iconTwo: < FaShower/> ,
         iconThree: <HiHashtag /> ,
-        Address: "2578 Folsom Street, San Francisco, CA, 94110",
-        price: "$1200/Month",
-        room: "Private Room" 
+        Address: "2578 Folsom Street, Ikeja, Lagos State",
+        price: "$800/Month",
+        room: "One-Bedroom Flat" 
     },
 
     {
@@ -60,9 +60,9 @@ export const Property =[
         iconOne: <FaCar/>,
         iconTwo: < FaShower/> ,
         iconThree: <HiHashtag /> ,
-        Address: "2578 Folsom Street, San Francisco, CA, 94110",
-        price: "$1200/Month",
-        room: "Private Room" 
+        Address: "2578 Folsom Street, Abeokuta, Ogun State",
+        price: "$300/Month",
+        room: "Bungalow" 
     },
 
     {
@@ -71,9 +71,9 @@ export const Property =[
         iconOne: <FaCar/>,
         iconTwo: < FaShower/> ,
         iconThree: <HiHashtag /> ,
-        Address: "2578 Folsom Street, San Francisco, CA, 94110",
-        price: "$1200/Month",
-        room: "Private Room" 
+        Address: "2578 Folsom Street, Ikeja Lagos",
+        price: "$800/Month",
+        room: "One-Bedroom Flat" 
     },
 
     {
@@ -82,9 +82,9 @@ export const Property =[
         iconOne: <FaCar/>,
         iconTwo: < FaShower/> ,
         iconThree: <HiHashtag /> ,
-        Address: "2578 Folsom Street, San Francisco, CA, 94110",
-        price: "$1200/Month",
-        room: "Private Room" 
+        Address: "2578 Folsom Street, Abeokuta Ogun State",
+        price: "$1000/Month",
+        room: "Duplex" 
     },
 
     {
@@ -93,9 +93,9 @@ export const Property =[
         iconOne: <FaCar/>,
         iconTwo: < FaShower/> ,
         iconThree: <HiHashtag /> ,
-        Address: "2578 Folsom Street, San Francisco, CA, 94110",
-        price: "$1200/Month",
-        room: "Private Room" 
+        Address: "2578 Folsom Street, Ibadan, Oyo State",
+        price: "$900/Month",
+        room: "Two-Bedroom Flat" 
     },
     {
         id: 6,
@@ -103,9 +103,134 @@ export const Property =[
         iconOne: <FaCar/>,
         iconTwo: < FaShower/> ,
         iconThree: <HiHashtag /> ,
-        Address: "2578 Folsom Street, San Francisco, CA, 94110",
+        Address: "2578 Folsom Street, Akure, Ondo State",
+        price: "$500/Month",
+        room: "Single Room" 
+    },
+
+    {
+        id: 7,
+        src: "/RentalImages/unsplash_KQgrVfR3r74.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Abuja, FCT",
         price: "$1200/Month",
-        room: "Private Room" 
+        room: "Duplex" 
+    },
+
+    {
+        id: 8,
+        src: "/RentalImages/unsplash_UV81E0oXXWQ.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Abeokuta, Ogun State",
+        price: "$500/Month",
+        room: "Bungalow Room" 
+    },
+    {
+        id: 9,
+        src: "/RentalImages/unsplash_uDtC-1NLEzU.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Lagos, Ikeja",
+        price: "$600/Month",
+        room: "One-Bedroon Flat" 
+    },
+    {
+        id: 10,
+        src: "/RentalImages/unsplash_Eh_It1hg4Hs.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Sango Otta, Ogun state",
+        price: "$900/Month",
+        room: "Three-bedroom Flat" 
+    },
+
+    {
+        id: 11,
+        src: "/RentalImages/unsplash_2d4lAQAlbDA.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Akure, Ondo State",
+        price: "$400/Month",
+        room: "Bungalow" 
+    },
+
+    {
+        id: 12,
+        src: "/RentalImages/unsplash_T6d96Qrb5MY.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, port-harcourt, Cross River",
+        price: "$600/Month",
+        room: "Self-contained" 
+    },
+    {
+        id: 13,
+        src: "/RentalImages/unsplash_2d4lAQAlbDA.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Ikeja, Lagos",
+        price: "$1000/Month",
+        room: "Duplex" 
+    },
+
+    {
+        id: 14,
+        src: "/RentalImages/unsplash_T6d96Qrb5MY.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Ikeja, Lagos",
+        price: "$1200/Month",
+        room: "Two-bedroom Flat" 
+    },
+    {
+        id: 15,
+        src: "/RentalImages/unsplash_uDtC-1NLEzU.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Ikeja, Lagos",
+        price: "$700/Month",
+        room: "Single Room" 
+    },
+    {
+        id: 16,
+        src: "/RentalImages/unsplash_Eh_It1hg4Hs.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Jos, Plateau",
+        price: "$800/Month",
+        room: "Two-bedroom Flat" 
+    },
+    {
+        id: 17,
+        src: "/RentalImages/unsplash_UV81E0oXXWQ.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Bauchi, Bauchi State",
+        price: "$300/Month",
+        room: "Single Room" 
+    },
+    {
+        id: 18,
+        src: "/RentalImages/unsplash_uDtC-1NLEzU.png",
+        iconOne: <FaCar/>,
+        iconTwo: < FaShower/> ,
+        iconThree: <HiHashtag /> ,
+        Address: "2578 Folsom Street, Benin-city, Edo State",
+        price: "$900/Month",
+        room: "Duplex Room" 
     }
 ]
 

@@ -44,7 +44,7 @@ function Owner() {
     }
 
     const handleLeft =()=>{
-        if (currentIndex > 0) {
+           if (currentIndex > 0) {
             setDirection('left')
             setCurrentIndex(currentIndex - 1)
         }
