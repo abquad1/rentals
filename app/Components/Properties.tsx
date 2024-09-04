@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Property} from './Data'
 import Image from 'next/image'
 
-function properties() {
+function Properties() {
 
 const [currentPage, setCurrentPage] = useState (1)
 
@@ -85,4 +85,4 @@ const handlePrev = ()=>{
   )
 }
 
-export default properties
+export default Properties
