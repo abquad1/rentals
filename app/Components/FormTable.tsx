@@ -37,7 +37,7 @@ const handleSelect =(e: React.ChangeEvent<HTMLSelectElement>)=>{
 
 const handleSubmit = async(e:React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
-    const response = await fetch('api/submit', {
+    const response = await fetch("http://localhost:5000/v1/hotel", {
         method: 'POST ',
         headers: {
             'content-type':' application.json'
@@ -79,7 +79,7 @@ onSubmit={handleSubmit}
 
             <div className="flex flex-col  sm: mt-4  md:mt-0  ">
                 <label className='text-lg font-semibold'>Unit Number<span className='text-[#F4511E] font-bold ml-2'>*</span></label>
-                 <input onChange={handleChange} name='unit' value={formData.unit} required
+                 <input onChange={handleChange} name='unit' value={formData.unit} required min={1}
                  className=' bg-gray-50 rounded-md border border-gray-200 w-[90%] pl-4 h-[40px]'
                   type= 'number' placeholder='Enter Unit'/>
             </div>

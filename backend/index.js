@@ -13,8 +13,9 @@ app.post("/v1/hotel" , (req, res, next)=>{
         console.log("incomplete data")
         return
     }
+    // Push to the database 
 })
 
-app.listen("3001", ()=>{
+app.listen("5000", ()=>{
       console.log("The app is listening....")
 })
