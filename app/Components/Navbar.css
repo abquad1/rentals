@@ -1,0 +1,9 @@
+.animate-logo {
+    animation: move 5s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); } /* Move right */
+    100% { transform: translateX(0); } /* Move back to original position */
+}
