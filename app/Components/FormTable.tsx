@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import { states } from './Data'
-import { cities } from './Data'
-import { roomTypes } from './Data'
+import { states } from '../pages/api/Data'
+import { cities } from '../pages/api/Data'
+import { roomTypes } from '../pages/api/Data'
 
 
 function FormTable() {
@@ -37,10 +37,10 @@ const handleSelect =(e: React.ChangeEvent<HTMLSelectElement>)=>{
 
 const handleSubmit = async(e:React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
-    const response = await fetch('api/submit', {
+    const response = await fetch('http://localhost:3000/api/data', {
         method: 'POST ',
         headers: {
-            'content-type':' application.json'
+            'content-type':' application/json'
         },
          body: JSON.stringify(formData)
     } );

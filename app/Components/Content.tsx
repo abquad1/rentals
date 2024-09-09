@@ -1,5 +1,5 @@
 import React from 'react'
-import { content} from './Data'
+import { content} from '../pages/api/Data'
 import Image from 'next/image';
 
 function Content() {

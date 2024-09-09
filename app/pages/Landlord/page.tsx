@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Properties from '../../Components/Properties'
-import { benefit } from '../../Components/Data'
+import { benefit } from '../api/Data'
 
 function Landlord() {
   return (
