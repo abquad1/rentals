@@ -36,7 +36,7 @@ const formSchema = z.object({
   room: z.string().min(1, 'Please select a room type'),
   price: z.string().min(1, 'Price is required'),
   description: z.string().min(1, 'Description is required').min(10, 'Description must be at least 10 characters'),
-  photos: z.array(z.instanceof(File)).min(1, 'At least one photo is required').max(10, 'Maximum 10 photos allowed'),
+  photos: z.array(z.instanceof(File)).length(1, 'Only one photo is required').max(10, 'Maximum 10 photos allowed'),
 })
 
 type FormValues = z.infer<typeof formSchema>
@@ -89,7 +89,6 @@ function FormTable() {
       }
 
       const result = await response.json()
-      console.log('Form submitted:', result)
       
       toast.success(
          'Property added successfully'
@@ -312,7 +311,6 @@ function FormTable() {
                       <Input
                         type="file"
                         accept="image/*"
-                        multiple
                         className="bg-gray-50 rounded-md border border-gray-200 md:w-[97%] sm:w-[90%] cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-[#F4511E] file:text-white hover:file:bg-[#F4511E]/90"
                         onChange={(e) => {
                           const files = Array.from(e.target.files || [])

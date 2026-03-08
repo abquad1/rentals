@@ -64,7 +64,7 @@ const propertySchema =new mongoose.Schema({
         }],
         validate: {
             validator : function(photos){
-                return photos.length = 1
+                return photos.length === 1
             },
             message: 'You can only upload one photo of property'
         }

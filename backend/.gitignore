@@ -1,1 +1,3 @@
 /node_modules
+# Never commit env files
+.env
