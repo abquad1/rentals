@@ -13,6 +13,16 @@ import { FaWifi } from "react-icons/fa";
 import { FaGooglePlusG } from "react-icons/fa";
 import Link from 'next/link';
 
+const socialIcons = [
+    { icon: FaTwitter, name: "Twitter" },
+    { icon: FaFacebook, name: "Facebook" },
+    { icon: FaLinkedin, name: "LinkedIn" },
+    { icon: FaYoutube, name: "YouTube" },
+    { icon: FaInstagram, name: "Instagram" },
+    { icon: FaPinterest, name: "Pinterest" },
+    { icon: FaGooglePlusG, name: "Google+" }
+  ];
+  
 
 function ContactInfo() {
   return (
@@ -36,20 +46,22 @@ function ContactInfo() {
                     <div className='flex gap-4'><IoPrint  className='text-[#F4511E] '/> <p>(+234) 8149027201</p></div>
                 </div>
 
-                <div className='md:flex sm: block items-center gap-8 mt-8 sm: text-center '>
-                    <p className='text-sm sm: mb-4 text-gray-400'>Social Media</p>
-                    <div className='text-[#F4511E] md:flex sm: grid sm: grid-cols-4 md:gap-10 sm: gap-4'>
-                        <FaTwitter className='sm: text-4xl md: text-md' />
-                        <FaFacebook className='sm: text-4xl md: text-md'/>
-                        <FaLinkedin className='sm: text-4xl md: text-md'/>
-                        <FaYoutube className='sm: text-4xl md: text-md'/>
-                        <FaInstagram className='sm: text-4xl md: text-md'/>
-                        <FaTwitter className='sm: text-4xl md: text-md'/>
-                        <FaPinterest className='sm: text-4xl md: text-md' />
-                        <FaGooglePlusG className='sm: text-4xl md: text-md'/>
+                <div className='block md:flex md:items-center gap-8 mt-8 '>
+                    <p className='text-gray-400 font-bold'>Social Media</p>
+                    {/* <div className='text-[#F4511E]  sm:grid md:flex sm:grid-cols-4  sm:gap-4 md:gap-10'> */}
+                    {/* <div className='text-[#F4511E] '> */}
+                    <div className="flex gap-16">
+                        {socialIcons.map(({ icon: Icon, name }, index) => (
+                            <Icon 
+                            key={index} 
+                            className="text-[#F4511E] sm:text-4xl md:text-md cursor-pointer hover:translate-y-1 transition-all duration-300" 
+                            title={name}
+                            />
+                        ))}
                     </div>
+
+                    {/* </div> */}
                 </div>
-                
             </div>
         </div>
 
