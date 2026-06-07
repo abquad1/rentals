@@ -36,7 +36,7 @@ const formSchema = z.object({
   room: z.string().min(1, 'Please select a room type'),
   price: z.string().min(1, 'Price is required'),
   description: z.string().min(1, 'Description is required').min(10, 'Description must be at least 10 characters'),
-  photos: z.array(z.instanceof(File)).length(1, 'Only one photo is required').max(10, 'Maximum 10 photos allowed'),
+  photos: z.array(z.any()).length(1, 'Only one photo is required').max(10, 'Maximum 10 photos allowed'),
 })
 
 type FormValues = z.infer<typeof formSchema>
