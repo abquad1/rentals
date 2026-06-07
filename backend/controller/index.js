@@ -8,7 +8,7 @@ exports.createProperty = async(req,res)=>{
         ? req.files.map(file => ({
             filename: file.filename,
             path: file.path,
-            url: file.path // Cloudinary URL (path is the full Cloudinary URL)
+            url: file.path 
         }))
         : null
 
