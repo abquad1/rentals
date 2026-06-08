@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import { FaLocationDot } from "react-icons/fa6";
@@ -9,7 +10,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
-import { FaWifi } from "react-icons/fa";
 import { FaGooglePlusG } from "react-icons/fa";
 import Link from 'next/link';
 

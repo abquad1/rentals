@@ -1,4 +1,3 @@
-import { IoSearchSharp } from "react-icons/io5";
 import { AiOutlineDollar } from "react-icons/ai"
 import { MdOutlineHomeWork } from "react-icons/md";
 import { FaLandmark } from "react-icons/fa6";
