@@ -6,6 +6,7 @@ import Image from 'next/image'
 function Properties() {
 
 const [currentPage, setCurrentPage] = useState (1)
+
 const perPage = 6
 const lastElement = currentPage * perPage;
 const firstElement = lastElement - perPage
