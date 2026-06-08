@@ -1,9 +1,9 @@
 import dynamic from 'next/dynamic'
 
-const Landing  = dynamic(() => import('./pages/Landing/page'),   { ssr: false })
-const Landlord = dynamic(() => import('./pages/Landlord/page'),  { ssr: false })
-const Tenant   = dynamic(() => import('./pages/Tenant/page'),    { ssr: false })
-const Contact  = dynamic(() => import('./pages/Contacts/page'),  { ssr: false })
+const Landing  = dynamic(() => import('./section/Landing/page'),   { ssr: false })
+const Landlord = dynamic(() => import('./section/Landlord/page'),  { ssr: false })
+const Tenant   = dynamic(() => import('./section/Tenant/page'),    { ssr: false })
+const Contact  = dynamic(() => import('./section/Contacts/page'),  { ssr: false })
 
 export default function LandingPage() {
   return (

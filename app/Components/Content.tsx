@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { content} from '../pages/api/Data'
+import { content} from '../section/api/Data'
 import Image from 'next/image';
 
 function Content() {

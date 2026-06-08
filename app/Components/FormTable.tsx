@@ -4,7 +4,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
-import { roomTypes } from '../pages/api/Data'
+import { roomTypes } from '../section/api/Data'
 import { Button } from '@/components/ui/button'
 import {
   Form,

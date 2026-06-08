@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { Property} from '../pages/api/Data'
+import { Property} from '../section/api/Data'
 import Image from 'next/image'
 
 function Properties() {
