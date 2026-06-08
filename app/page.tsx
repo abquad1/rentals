@@ -1,19 +1,17 @@
-// import Image from "next/image";
-import Contact from "./pages/Contacts/page";
-import Landing from "./pages/Landing/page";
-// import Home from "./pages/Landing/page"
-import Landlord from "./pages/Landlord/page";
-import Tenant from "./pages/Tenant/page";
+import dynamic from 'next/dynamic'
 
+const Landing  = dynamic(() => import('./pages/Landing/page'),   { ssr: false })
+const Landlord = dynamic(() => import('./pages/Landlord/page'),  { ssr: false })
+const Tenant   = dynamic(() => import('./pages/Tenant/page'),    { ssr: false })
+const Contact  = dynamic(() => import('./pages/Contacts/page'),  { ssr: false })
 
 export default function LandingPage() {
   return (
-    <main className="min-h-screen ">
-      
+    <main className="min-h-screen">
       <Landing />
       <Landlord />
       <Tenant />
-      <Contact/>
+      <Contact />
     </main>
-  );
+  )
 }
